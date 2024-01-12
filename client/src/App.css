@@ -1,0 +1,189 @@
+.container {
+  position: relative;
+  color: #deeaeb;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+.middle-text {
+
+margin-top: 350px;
+  margin-left:  865px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-family: cursive; 
+  line-height: 0.8; 
+}
+
+.middle-text h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.middle-text h2 {
+
+  margin-bottom: 10px;
+}
+
+.middle-text h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.middle-text h5 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+/* 3D Image Background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url('/home/ds/Desktop/Zuqo Assignment/zuqo-assignment/client/src/assets/mt1jdqwj6id81.jpg') center/cover no-repeat fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateZ(-1px);
+  z-index: -1;
+
+}
+
+/* Navigation Links */
+
+
+nav {
+  position: absolute;
+  top: 20px;
+  right: 50px; 
+  display: flex;
+}
+
+nav a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: x-large;
+  font-family: cursive;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #100f0f;
+}
+
+/* .circles-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 120px;
+}
+
+.circle{
+  width: 200px;
+  height: 200px;
+  border: 30px solid #dfe4db8f;
+  border-radius: 500%;
+  margin: -50px -18px 0;
+  box-shadow: 0 0 20px rgba(1, 1, 1, 0.3);
+
+
+} */
+
+
+.infinity {
+  position: relative;
+  width: 300px; 
+  height: 150px;
+  margin-left: 740px;
+margin-top: -45px;
+}
+
+.infinity::before,
+.infinity::after {
+  content: "";
+  position: absolute;
+  width: 89px; 
+  height: 89px; 
+  border: 28px solid #17538e65; 
+  border-radius: 74px 74px 0 74px; 
+  transform: rotate(-45deg);
+  background: linear-gradient(rgba(0, 0, 0, 0.504), rgba(0, 0, 0, 0.749))
+
+}
+
+.infinity::after {
+  left: auto;
+  right: 0;
+  border-radius: 75px 75px 75px 0; 
+  transform: rotate(45deg);
+}
+.infinity:hover::before,
+.infinity:hover::after {
+  background: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .infinity {
+    width: 80%;
+    height: auto; 
+    margin: 20px auto;
+  }
+}
+.infinity-image {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 1; 
+  width: 25%;
+  border-radius: 20px;
+  height: auto;
+}
+  
+
+
+
+
+
+/* Login Form */
+.login-form {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+  background: rgba(21, 18, 18, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 3; 
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form input[type="password"] {
+  position: relative;
+}
+
+.login-form input[type="password"] input[type="checkbox"] {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}

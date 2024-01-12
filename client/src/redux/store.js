@@ -1,4 +1,3 @@
-
 import { configureStore } from '@reduxjs/toolkit';
 import authReducer from './reducers';
 
@@ -9,4 +8,3 @@ const store = configureStore({
 });
 
 export default store;
-
