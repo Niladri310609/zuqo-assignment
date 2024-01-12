@@ -8,7 +8,7 @@
 .middle-text {
 
 margin-top: 350px;
-  margin-left:  865px;
+  margin-left:  850px;
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
@@ -33,7 +33,7 @@ margin-top: 350px;
 
 .middle-text h5 {
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 /* 3D Image Background */
 body::before {
@@ -144,46 +144,100 @@ margin-top: -45px;
   border-radius: 20px;
   height: auto;
 }
-  
 
-
-
-
-
-/* Login Form */
-.login-form {
-  position: absolute;
-  top: 50%;
-  right: 10%;
-  transform: translate(0, -50%);
-  background: rgba(21, 18, 18, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  z-index: 3; 
+.SeContainer {
+  position: relative;
+  margin-left: 1200px;
+  top: -400px;
+  font-family: 'Times New Roman', Times, serif;
+  background: #7e2778;
+  width: 250px;
+  height: 50px;
+  border-radius: 10px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; 
 }
-
-.login-form label {
-  display: block;
-  margin-bottom: 10px;
+.first-word {
+  font-size: 1.2em; 
   font-weight: bold;
 }
+.FormContainer {
+  background: #fff;
+  font-size: large;
+  color: #050505;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 1110px;
+  width: 400px;
+  height: 320px;
+  border-radius: 20px;
+  margin-top: -430px; 
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(20, 1, 1, 0.1); 
+}
 
-.login-form input {
-  width: 100%;
+.FormContainer form {
+  display: flex;
+  flex-direction: column;
+}
+
+.FormContainer label {
+  margin-bottom: 1px;
+  font-size: medium;
+  color: #050505;
+  font-weight: 100px;
+  font-style: italic;
+}
+
+.FormContainer input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #050505;
+  border-radius: 10px;
+}
+
+.FormContainer button {
   padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  margin-top: 20px;
+  background: #5086b5;
+  color: #f6f1f1;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: large;
+}
+#showPassword {
+  margin-right: 380px;
+  margin-top: 15px;
+
+}
+/* Define your default styles */
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
 }
 
-.login-form input[type="password"] {
-  position: relative;
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
 }
 
-.login-form input[type="password"] input[type="checkbox"] {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
+/* For medium screens (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
 }
+
+/* For large screens (desktops) */
+@media only screen and (min-width: 1025px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+

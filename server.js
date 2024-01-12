@@ -200,7 +200,7 @@ app.post('/agent/login', async(req,res)=>{
         }
     
         if (!isValid(email)) {
-          return res.status(400).send({ status: false, message: "Enter an email" });
+          return res.status(406).send({ status: false, message: "Enter an email" });
         }
     
         if (!isValidEmail(email)) {
